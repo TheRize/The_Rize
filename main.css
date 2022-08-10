@@ -16,6 +16,7 @@ body {
   width: 60px;
   height: 60px;
   cursor: pointer;
+
 }
 .hamburger > div {
   height: 5px;
@@ -46,6 +47,7 @@ body {
 .main > p:hover {
   border-top:1px solid white;
   border-bottom: 1px solid white;
+  width: 40px;
 }
 .container:hover  .main {
   opacity: 1;

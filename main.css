@@ -1,3 +1,56 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: red;
+  width: 100vw;
+  height: 100vh;
+}
 .container {
-  width: 100%;
+  width: 25%;
+  height: 100%;
+  background-color: hotpink;
+  display: flex;
+  flex-direction: column;
+}
+.hamburger {
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+}
+.hamburger > div {
+  height: 5px;
+  width: 35px;
+  margin:10px ;
+  background-color: #fff;
+  border-radius: 5px;
+}
+.hamburger:hover .top{
+  width:40px;
+  transform: rotate(40deg) translateY(10px);
+  transition: 1s;
+}
+.hamburger:hover .middle{
+  display: none;
+}
+.hamburger:hover .bottom {
+  width: 40px;
+  transform: rotate(-40deg) translateY(-10px);
+  transition: 1s;
+}
+.main {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: 500ms;
+  cursor: pointer;
+}
+.main > p:hover {
+  border-top:1px solid white;
+  border-bottom: 1px solid white;
+}
+.hamburger:hover + .main {
+  opacity: 1;
+  transform: translateX(100px);
+  transition: 1s;
+  display: flex;
+  flex-direction: column;
 }

@@ -24,15 +24,15 @@ body {
   background-color: #fff;
   border-radius: 5px;
 }
-.container:hover .top{
+input:hover + .hamburger :first-child {
   width:40px;
   transform: rotate(40deg) translateY(10px);
   transition: 1s;
 }
-.container:hover .middle{
+input:hover + .hamburger :nth-child(2){
   display: none;
 }
-.container:hover .bottom {
+input:hover + .hamburger :last-child{
   width: 40px;
   transform: rotate(-40deg) translateY(-10px);
   transition: 1s;
@@ -46,13 +46,20 @@ body {
 }
 .main > p:hover {
   width: 10%;
-  border-top:1px solid white;
   border-bottom: 1px solid white;
+  display: flex;
+  transition: 200ms ;
 }
-.container:hover > .main {
+input:checked + .main {
   opacity: 1;
   transform: translateX(100px);
   transition: 1s;
   display: flex;
   flex-direction: column;
+}
+input {
+  height: 39px;
+  width: 39px;
+  position: absolute;
+  opacity: 0;
 }

@@ -24,15 +24,15 @@ body {
   background-color: #fff;
   border-radius: 5px;
 }
-.hamburger:hover .top{
+.container:hover .top{
   width:40px;
   transform: rotate(40deg) translateY(10px);
   transition: 1s;
 }
-.hamburger:hover .middle{
+.container:hover .middle{
   display: none;
 }
-.hamburger:hover .bottom {
+.container:hover .bottom {
   width: 40px;
   transform: rotate(-40deg) translateY(-10px);
   transition: 1s;
@@ -42,12 +42,14 @@ body {
   transform: translateX(-50px);
   transition: 500ms;
   cursor: pointer;
+  gap: 9px;
 }
 .main > p:hover {
+  width: 10%;
   border-top:1px solid white;
   border-bottom: 1px solid white;
 }
-.hamburger:hover + .main {
+.container:hover > .main {
   opacity: 1;
   transform: translateX(100px);
   transition: 1s;

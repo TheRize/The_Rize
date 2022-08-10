@@ -21,16 +21,16 @@ body {
 .hamburger > div {
   height: 5px;
   width: 35px;
-  margin:10px ;
+  margin: 10px;
   background-color: #fff;
   border-radius: 5px;
 }
-.hamburger:hover .top{
-  width:40px;
+.hamburger:hover .top {
+  width: 40px;
   transform: rotate(40deg) translateY(10px);
   transition: 1s;
 }
-.hamburger:hover .middle{
+.hamburger:hover .middle {
   display: none;
 }
 .hamburger:hover .bottom {
@@ -40,12 +40,11 @@ body {
 }
 .main {
   opacity: 0;
-  transform: translateX(-50px);
-  transition: 500ms;
+  transform: translateX(0px);
   cursor: pointer;
 }
 .main > p:hover {
-  border-top:1px solid white;
+  border-top: 1px solid white;
   border-bottom: 1px solid white;
   width: 40px;
 }

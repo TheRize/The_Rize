@@ -13,12 +13,10 @@ body {
   flex-direction: column;
 }
 .hamburger {
-  position: relative;
-  bottom: 50px;
-  right: 3px;
   width: 60px;
   height: 60px;
   cursor: pointer;
+  z-index: 0;
 }
 .hamburger > div {
   height: 5px;
@@ -27,15 +25,15 @@ body {
   background-color: #fff;
   border-radius: 5px;
 }
-input:checked + .hamburger :first-child {
+input:hover + .hamburger :first-child {
   width:40px;
   transform: rotate(40deg) translateY(10px);
   transition: 1s;
 }
-input:checked + .hamburger :nth-child(2){
+input:hover + .hamburger :nth-child(2){
   display: none;
 }
-input:checked + .hamburger :last-child{
+input:hover + .hamburger :last-child{
   width: 40px;
   transform: rotate(-40deg) translateY(-10px);
   transition: 1s;
@@ -46,80 +44,34 @@ input:checked + .hamburger :last-child{
   transition: 500ms;
   cursor: pointer;
   gap: 9px;
+  
 }
-.b1 {
-  position: relative;
-  bottom: 44px;
-  opacity: 0;
-  width: 90px;
-  height: 2px;
-  background-color: white;
+.main > p:hover {
+  width: 10%;
+  border-bottom: 1px solid white;
+  display: flex;
+  transition: 200ms ;
 }
-.b2 {
-  position: relative;
-  bottom: 39px;
-  opacity: 0;
-  width: 90px;
-  height: 2px;
-  background-color: white;
-}
-.b3 {
-  position: relative;
-  bottom: 39px;
-  opacity: 0;
-  width: 90px;
-  height: 2px;
-  background-color: white;
-}
-.b4 {
-  position: relative;
-  bottom: 39px;
-  opacity: 0;
-  width: 90px;
-  height: 2px;
-  background-color: white;
-}
-.p1:hover + .b1{
-  transition: 600ms;
-  opacity: 1;
-  transform: translateY(-4px);
-}
-.p1:hover ~ .b2 {
-  transition: 600ms;
-  transform: translateY(4px);
-  opacity: 1;
-}
-.p2:hover + .b1{
-  transition: 600ms;
-  opacity: 1;
-  transform: translateY(-4px);
-}
-.p2:hover ~ .b3 {
-  transition: 600ms;
-  opacity: 1;
-  transform: translateY(4px);
-}
-.p3:hover + .b1{
-  transition: 600ms;
-  opacity: 1;
-  transform: translateY(-4px);
-}
-.p3:hover ~ .b4 {
-  transition: 600ms;
-  opacity: 1;
-  transform: translateY(4px);
-}
-input:checked ~ .main {
+input:checked + .main {
   opacity: 1;
   transform: translateX(100px);
   transition: 1s;
   display: flex;
   flex-direction: column;
+  
+ 
 }
 input {
-  z-index: 1;
   height: 39px;
   width: 39px;
-  opacity: 0;
-  cursor: pointer;
+  position: absolute;
+  opacity: 0; 
+  z-index: 2;
+}
+canvas {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: black;
 }

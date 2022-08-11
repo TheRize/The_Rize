@@ -65,4 +65,5 @@ input {
   height: 39px;
   width: 39px;
   opacity: 0;
+  cursor: pointer;
 }

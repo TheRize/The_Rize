@@ -13,6 +13,9 @@ body {
   flex-direction: column;
 }
 .hamburger {
+  position: relative;
+  bottom: 50px;
+  right: 3px;
   width: 60px;
   height: 60px;
   cursor: pointer;
@@ -24,15 +27,15 @@ body {
   background-color: #fff;
   border-radius: 5px;
 }
-input:hover + .hamburger :first-child {
+input:checked + .hamburger :first-child {
   width:40px;
   transform: rotate(40deg) translateY(10px);
   transition: 1s;
 }
-input:hover + .hamburger :nth-child(2){
+input:checked + .hamburger :nth-child(2){
   display: none;
 }
-input:hover + .hamburger :last-child{
+input:checked + .hamburger :last-child{
   width: 40px;
   transform: rotate(-40deg) translateY(-10px);
   transition: 1s;
@@ -50,7 +53,7 @@ input:hover + .hamburger :last-child{
   display: flex;
   transition: 200ms;
 }
-input:checked + .main {
+input:checked ~ .main {
   opacity: 1;
   transform: translateX(100px);
   transition: 1s;
@@ -58,8 +61,8 @@ input:checked + .main {
   flex-direction: column;
 }
 input {
+  z-index: 1;
   height: 39px;
   width: 39px;
-  position: absolute;
   opacity: 0;
 }

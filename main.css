@@ -47,11 +47,67 @@ input:checked + .hamburger :last-child{
   cursor: pointer;
   gap: 9px;
 }
-.main > p:hover {
-  width: 10%;
-  border-bottom: 1px solid white;
-  display: flex;
-  transition: 200ms;
+.b1 {
+  position: relative;
+  bottom: 44px;
+  opacity: 0;
+  width: 90px;
+  height: 2px;
+  background-color: white;
+}
+.b2 {
+  position: relative;
+  bottom: 39px;
+  opacity: 0;
+  width: 90px;
+  height: 2px;
+  background-color: white;
+}
+.b3 {
+  position: relative;
+  bottom: 39px;
+  opacity: 0;
+  width: 90px;
+  height: 2px;
+  background-color: white;
+}
+.b4 {
+  position: relative;
+  bottom: 39px;
+  opacity: 0;
+  width: 90px;
+  height: 2px;
+  background-color: white;
+}
+.p1:hover + .b1{
+  transition: 600ms;
+  opacity: 1;
+  transform: translateY(-4px);
+}
+.p1:hover ~ .b2 {
+  transition: 600ms;
+  transform: translateY(4px);
+  opacity: 1;
+}
+.p2:hover + .b1{
+  transition: 600ms;
+  opacity: 1;
+  transform: translateY(-4px);
+}
+.p2:hover ~ .b3 {
+  transition: 600ms;
+  opacity: 1;
+  transform: translateY(4px);
+}
+.p3:hover + .b1{
+  transition: 600ms;
+  opacity: 1;
+  transform: translateY(-4px);
+}
+.p3:hover ~ .b4 {
+  transition: 600ms;
+  opacity: 1;
+  transform: translateY(4px);
 }
 input:checked ~ .main {
   opacity: 1;

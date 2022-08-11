@@ -48,7 +48,7 @@ input:hover + .hamburger :last-child{
   width: 10%;
   border-bottom: 1px solid white;
   display: flex;
-  transition: 200ms ;
+  transition: 200ms;
 }
 input:checked + .main {
   opacity: 1;

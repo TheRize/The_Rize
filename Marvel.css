@@ -1,70 +1,172 @@
-.back{
-    background-color: rgb(19, 31, 31);
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-align-items: center;
-justify-content: center;
+.back {
+  background-color: rgb(19, 31, 31);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-*{
-    margin: 0px;
+* {
+  margin: 0px;
 }
-.cir{
-    height: 500px;
-width: 500px;
+.cir {
+  height: 500px;
+  width: 500px;
 
-background-color: rgb(12, 39, 30);
-border: solid green;
-border-radius: 50%;
-display: flex;
-align-items: center;
-justify-content: center;
-
+  background-color: rgb(12, 39, 30);
+  border: solid green;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgb(0, 0, 0) 0 0 100px 5px ;
 }
-.cir2{
-    background-color: black;
-    height: 390px;
-    width: 390px;
-    
-    background-color: rgb(0, 0, 0);
-    border: solid green;
+.cir2 {
+  background-color: black;
+  height: 390px;
+  width: 390px;
+
+  background-color: rgb(0, 0, 0);
+  border: solid green;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: aqua 0 0 100px 5px ;
+}
+.cir3 {
+  background-color: black;
+  height: 360px;
+  width: 360px;
+
+  background-color: rgb(252, 249, 249);
+  border: solid rgb(38, 169, 192) 3px;
+  border-radius: 50%;
+  box-shadow: aqua;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  box-shadow: aqua 0 0 100px 5px ;
+}
+.cir3 > div:nth-of-type(1) {
+  position: absolute;
+  top: 45%;
+  min-width: 380px;
+  height: 45px;
+  background-color: rgb(19, 138, 138);
+  animation: roll 4s infinite;
+  opacity: 0.7;
+  animation-timing-function: linear;
+  
+}
+
+@keyframes roll {
+  from {
+    transform: rotate(10deg);
+  }
+  to {
+    transform: rotate(370deg);
+  }
+}
+.cir3 > div:nth-of-type(2) {
+  position: absolute;
+  top: 45%;
+  min-width: 380px;
+  height: 45px;
+  background-color: rgb(19, 138, 138);
+  animation: rell 4s infinite;
+  opacity: 0.7;
+  animation-timing-function: linear;
+}
+@keyframes rell {
+  from {
+    transform: rotate(55deg);
+  }
+  to {
+    transform: rotate(415deg);
+  }}
+.cir3 > div:nth-of-type(3) {
+  position: absolute;
+  top: 45%;
+  min-width: 380px;
+  height: 45px;
+  background-color: rgb(19, 138, 138);
+  animation: rall 4s infinite;
+  opacity: 0.7;
+  animation-timing-function: linear;
+}
+@keyframes rall {
+  from {
+    transform: rotate(100deg);
+  }
+  to {
+    transform: rotate(460deg);
+  }}
+.cir3 > div:nth-of-type(4) {
+  position: absolute;
+  top: 45%;
+  min-width: 380px;
+  height: 50px;
+  background-color: rgb(19, 138, 138);
+  animation: rull 4s infinite;
+  opacity: 0.7;
+  animation-timing-function: linear;
+}
+@keyframes rull {
+  from {
+    transform: rotate(145deg);
+  }
+  to {
+    transform: rotate(505deg);
+  }}
+  .cir4{
+    width: 290px;
+    height: 290px;
+    background-color:black ;
+    border: solid rgb(38, 169, 192) 3px;
     border-radius: 50%;
+    box-shadow: aqua;
+    z-index: 1;
     display: flex;
-align-items: center;
-justify-content: center;
-}
-.cir3{
+  align-items: center;
+  justify-content: center;
+  box-shadow: aqua 0 0 50px 5px ;
+  }
+  .cir5{
     background-color: black;
-    height: 360px;
-    width: 360px;
-    
+    height: 180px;
+    width: 180px;
+  
     background-color: rgb(252, 249, 249);
-    border: solid rgb(38, 169, 192) 3px ;
+    border: solid rgb(38, 169, 192) 3px;
     border-radius: 50%;
-box-shadow: aqua;
-position: relative;
-display: flex;
-align-items: center;
-justify-content: center;
-}
-.cir3 > div{
-position: absolute;
-top: 45%;
-    min-width: 18.5vw;
-    height: 30px;
-    background-color: rgb(19, 138, 138);
-    animation: roll 7s infinite;
-    transform: rotate(30deg);
-    opacity: .7;
+    box-shadow: aqua;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: aqua 0 0 100px 5px ;
   }
-  
-  @keyframes roll {
-    0% {
-      transform: rotate(0);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
+  .cir6{
+    width: 140px;
+    height: 140px;
+    background-color:black ;
+    border: solid rgb(38, 169, 192) 3px;
+    border-radius: 50%;
+    box-shadow: aqua;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+    
   }
+  .cir7{
+   
+    height: 110px;
+    width: 110px;
   
-
+    background-color: rgb(252, 249, 249);
+    border: solid rgb(38, 169, 192) 3px;
+    border-radius: 50%;
+    box-shadow: aqua 0 0 100px 5px ;
+  }
